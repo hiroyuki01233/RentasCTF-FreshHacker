@@ -1,7 +1,3 @@
-# Bring Your Own Script
-
-I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
-
 # About
 
 **Category:**  WEB
@@ -9,6 +5,10 @@ I wrote a script to recursively search through a website that has a nested struc
 **Question:**  Bring Your Own Script
 
 **Answer:**  RWSC{J4CKP0T}
+
+# Bring Your Own Script
+
+I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
 
 # The html code that has flag
 
