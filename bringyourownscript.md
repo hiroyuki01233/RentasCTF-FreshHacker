@@ -1,8 +1,3 @@
----
-title: "Daily report"
-tags: ""
----
-
 # Bring Your Own Script
 
 I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
@@ -71,3 +66,6 @@ def scrape_and_find_rwsc(url):
 start_url = 'https://byos.ctf.rawsec.com/root/index.php' 
 scrape_and_find_rwsc(start_url)
 ```
+
+
+![Screenshot 2024-03-06 225956](https://github.com/hiroyuki01233/RentasCTF-FreshHacker/assets/49856822/49fcb13e-f9f2-4736-9389-c54577368ad5)
