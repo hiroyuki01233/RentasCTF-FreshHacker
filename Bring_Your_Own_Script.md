@@ -5,7 +5,9 @@ I wrote a script to recursively search through a website that has a nested struc
 # About
 
 **Category:**  WEB
+
 **Question:**  Bring Your Own Script
+
 **Answer:**  RWSC{J4CKP0T}
 
 # The html code that has flag
