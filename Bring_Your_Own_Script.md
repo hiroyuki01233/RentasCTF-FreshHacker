@@ -2,6 +2,12 @@
 
 I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
 
+# The Anser
+
+```
+RWSC{J4CKP0T}
+```
+
 # The html code that has flag below
 
 [The Link Here](https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98%83/%F0%9F%98%94%F0%9F%98%81%F0%9F%98%95%F0%9F%98%B5/%F0%9F%98%BA%F0%9F%98%AA%F0%9F%A5%B4%F0%9F%98%87/%F0%9F%A5%B0%F0%9F%A5%B6%F0%9F%A4%A3%F0%9F%98%82/%F0%9F%A4%A7%F0%9F%98%85/index.php)
