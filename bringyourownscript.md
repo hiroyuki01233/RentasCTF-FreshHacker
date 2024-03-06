@@ -1,0 +1,73 @@
+---
+title: "Daily report"
+tags: ""
+---
+
+# Bring Your Own Script
+
+I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
+
+## Here is a script to scrape
+
+```
+# Updated code with functionality to save all scraped HTML pages to a directory
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, quote, urlparse, urldefrag
+import os
+
+
+def save_html_to_file(soup, url, directory):
+    """
+    Save the BeautifulSoup object as an HTML file in the specified directory.
+    The filename is derived from the URL.
+    """
+    # Parse the URL to create a valid filename
+    parsed_url = urlparse(url)
+    filename = (f"{parsed_url.netloc}{parsed_url.path}".replace('/', '_').replace('%', '_'))[:250] + ".html"
+    filepath = os.path.join(directory, filename)
+
+    # Write the HTML content to the file
+    with open(filepath, 'w', encoding='utf-8') as file:
+        file.write(soup.prettify())
+
+    print(f"Saved HTML to {filepath}")
+
+
+import urllib.parse
+
+def scrape_and_find_rwsc(url):
+    # スクレイピングする関数
+    def scrape(url):
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        save_html_to_file(soup, url, "./html_directory")
+
+        return soup
+
+    # 再帰的にリンクをたどる関数
+    def follow_links(url):
+
+        print(url)
+        soup = scrape(url)
+        if "No directories found." not in soup.prettify() and "<li>" not in soup.prettify():
+            # RWSCが含まれる場合、HTMLを出力して終了
+            print(soup.prettify())
+            return True
+
+        for li in soup.find_all('li'):
+            a = li.find('a')
+            if a and 'href' in a.attrs:
+                # 新しいURLを作成してたどる
+                next_url = urllib.parse.urljoin(url, a['href'])
+                if follow_links(next_url):
+                    return True
+        return False
+
+    follow_links(url)
+
+# スタートURL
+start_url = 'https://byos.ctf.rawsec.com/root/index.php' 
+scrape_and_find_rwsc(start_url)
+```
