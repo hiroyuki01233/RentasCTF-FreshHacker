@@ -14,7 +14,7 @@ RWSC{J4CKP0T}
 
 ```https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98%83/%F0%9F%98%94%F0%9F%98%81%F0%9F%98%95%F0%9F%98%B5/%F0%9F%98%BA%F0%9F%98%AA%F0%9F%A5%B4%F0%9F%98%87/%F0%9F%A5%B0%F0%9F%A5%B6%F0%9F%A4%A3%F0%9F%98%82/%F0%9F%A4%A7%F0%9F%98%85/index.php```
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -36,7 +36,7 @@ RWSC{J4CKP0T}
 
 ## Here is a script to scrape
 
-```
+```python
 # Updated code with functionality to save all scraped HTML pages to a directory
 import requests
 from bs4 import BeautifulSoup
