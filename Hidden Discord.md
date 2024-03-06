@@ -1,12 +1,16 @@
 ﻿# About
+ 
 **Category**: Misc
+
 **Question**: Hidden Discord
+
 **Flag**: RWSC{r34d_d15c0rd_d3v3l0p3r_API_r3f3r3nc3}
 
 **Description**
 In thise question we were ask to join a hidden discord and find the seperated flag in the discord server.
 
 # How to Solve?
+
 When we joined the server we will saw a welcome message showing with the given infomation the flag were seperated into `5 parts`.  
 
 I started to navigate around the channels and we will see the flag segment for `Part 3 : d3v3l0p3r_`in the Event.
@@ -34,7 +38,7 @@ Lastly, we only need to combine all the flag segment accordingly
 
 > Part 1:RWSC{r34d_ 
 > Part 2: d15c0rd_ 
-> Part 3 : d3v3l0p3r_ 
+> Part 3: d3v3l0p3r_ 
 > Part 4:API_
 > Part 5:r3f3r3nc3}
 
