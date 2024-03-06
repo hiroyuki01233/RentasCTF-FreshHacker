@@ -7,6 +7,7 @@
 **Flag**: RWSC{r34d_d15c0rd_d3v3l0p3r_API_r3f3r3nc3}
 
 **Description**
+
 In thise question we were ask to join a hidden discord and find the seperated flag in the discord server.
 
 # How to Solve?
