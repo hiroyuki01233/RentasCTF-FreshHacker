@@ -6,6 +6,7 @@
 **Flag**: RWSC{PIZZINI_CIPHER_IS_EAZY}
 
 **Description**
+
 In this question we were given a text file with the content `2126226{19122929121712_6121911821_26422_842928}`
 
 # How to Solve?
