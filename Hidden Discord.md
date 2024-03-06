@@ -27,6 +27,9 @@ Then we can see the hidden category named `Part 4:API_`  that is the fourth segm
 
 The channel `dont_tell_other_about_server_icon` was also the hint, I use inspect mode to check on the server icon picture and the final flag `Part 5:r3f3r3nc3}`found.
 
+![enter image description here](![image](https://github.com/hiroyuki01233/RentasCTF-FreshHacker/assets/145642080/6b86388a-4a3c-460b-8fb7-64528539a0c9)
+)
+
 Lastly, we only need to combine all the flag segment accordingly 
 
 > Part 1:RWSC{r34d_ 
