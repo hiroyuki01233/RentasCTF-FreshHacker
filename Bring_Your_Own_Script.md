@@ -2,6 +2,31 @@
 
 I wrote a script to recursively search through a website that has a nested structure with dozens of subdirectories stemming from the root page, and further subdirectories within those, reaching a maximum depth of about 15 levels. This script is designed to save the HTML of all those endpoints. Essentially, all the HTML files contain either `'No directories found.'` or have `<li>` tags, so I surmised that the HTML files without these are where the flag is hidden, and included this in my conditions. Ultimately, I discovered an endpoint returning HTML with an image and found the flag.
 
+# The html code that has flag below
+
+[The Link Here](https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98%83/%F0%9F%98%94%F0%9F%98%81%F0%9F%98%95%F0%9F%98%B5/%F0%9F%98%BA%F0%9F%98%AA%F0%9F%A5%B4%F0%9F%98%87/%F0%9F%A5%B0%F0%9F%A5%B6%F0%9F%A4%A3%F0%9F%98%82/%F0%9F%A4%A7%F0%9F%98%85/index.php)
+```https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98%83/%F0%9F%98%94%F0%9F%98%81%F0%9F%98%95%F0%9F%98%B5/%F0%9F%98%BA%F0%9F%98%AA%F0%9F%A5%B4%F0%9F%98%87/%F0%9F%A5%B0%F0%9F%A5%B6%F0%9F%A4%A3%F0%9F%98%82/%F0%9F%A4%A7%F0%9F%98%85/index.php```
+
+```
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Image Display
+  </title>
+ </head>
+ <body>
+  <img alt="8hss4p.jpg" src="8hss4p.jpg" style="max-width: 100%;"/>
+  <img alt="8hss31.jpg" src="8hss31.jpg" style="max-width: 100%;"/>
+ </body>
+</html>
+```
+
+![image](https://github.com/hiroyuki01233/RentasCTF-FreshHacker/assets/49856822/9444e32a-eec8-49f0-90cc-4b874ab1a469)
+
+
 ## Here is a script to scrape
 
 ```
