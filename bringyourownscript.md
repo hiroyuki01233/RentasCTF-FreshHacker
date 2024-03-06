@@ -68,4 +68,6 @@ scrape_and_find_rwsc(start_url)
 ```
 
 
+## Here is a directory under htmls that are scraped
+
 ![Screenshot 2024-03-06 225956](https://github.com/hiroyuki01233/RentasCTF-FreshHacker/assets/49856822/49fcb13e-f9f2-4736-9389-c54577368ad5)
