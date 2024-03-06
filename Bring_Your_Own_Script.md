@@ -4,7 +4,7 @@
 
 **Question:**  Bring Your Own Script
 
-**Answer:**  RWSC{J4CKP0T}
+**Flag:**  RWSC{J4CKP0T}
 
 # How to solve
 
