@@ -37,10 +37,14 @@ The channel `dont_tell_other_about_server_icon` was also the hint, I use inspect
 
 Lastly, we only need to combine all the flag segment accordingly 
 
-> Part 1:RWSC{r34d_ 
-> Part 2: d15c0rd_ 
-> Part 3: d3v3l0p3r_ 
+> Part 1:RWSC{r34d_
+> 
+> Part 2: d15c0rd_
+>
+> Part 3: d3v3l0p3r_
+> 
 > Part 4:API_
+> 
 > Part 5:r3f3r3nc3}
 
 and we will get our final flag `RWSC{r34d_d15c0rd_d3v3l0p3r_API_r3f3r3nc3}`
